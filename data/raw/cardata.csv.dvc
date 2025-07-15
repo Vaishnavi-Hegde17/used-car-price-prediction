@@ -1,0 +1,5 @@
+outs:
+- md5: e026e6d25968cec490e9a4f8987b95b6
+  size: 17209
+  hash: md5
+  path: cardata.csv
