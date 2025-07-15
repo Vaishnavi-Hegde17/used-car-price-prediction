@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+jinja2
+joblib
+pandas
+scikit-learn
+mlflow
+dvc
+numpy
+python_multipart

@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/used-car-price-prediction/mlruns/553327259743452400/1e4ff7412aea453db2f2a729b8fb960a/artifacts
+end_time: 1752579743923
+entry_point_name: ''
+experiment_id: '553327259743452400'
+lifecycle_stage: active
+run_id: 1e4ff7412aea453db2f2a729b8fb960a
+run_name: KNN Regressor
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752579737998
+status: 3
+tags: []
+user_id: vaish

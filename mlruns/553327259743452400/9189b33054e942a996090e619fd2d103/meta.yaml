@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/used-car-price-prediction/mlruns/553327259743452400/9189b33054e942a996090e619fd2d103/artifacts
+end_time: 1752579737972
+entry_point_name: ''
+experiment_id: '553327259743452400'
+lifecycle_stage: active
+run_id: 9189b33054e942a996090e619fd2d103
+run_name: Linear Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752579731143
+status: 3
+tags: []
+user_id: vaish

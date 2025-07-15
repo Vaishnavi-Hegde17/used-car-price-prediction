@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/used-car-price-prediction/mlruns/553327259743452400/62b863027da74d64aca9dc4c1ecdb704/artifacts
+end_time: 1752579749738
+entry_point_name: ''
+experiment_id: '553327259743452400'
+lifecycle_stage: active
+run_id: 62b863027da74d64aca9dc4c1ecdb704
+run_name: Random Forest Regressor
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752579743945
+status: 3
+tags: []
+user_id: vaish

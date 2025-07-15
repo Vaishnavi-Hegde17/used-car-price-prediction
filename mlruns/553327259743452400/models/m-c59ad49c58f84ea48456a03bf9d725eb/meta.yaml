@@ -1,0 +1,10 @@
+artifact_location: file:///E:/used-car-price-prediction/mlruns/553327259743452400/models/m-c59ad49c58f84ea48456a03bf9d725eb/artifacts
+creation_timestamp: 1752579738202
+experiment_id: '553327259743452400'
+last_updated_timestamp: 1752579743202
+model_id: m-c59ad49c58f84ea48456a03bf9d725eb
+model_type: null
+name: knn_regressor_model
+source_run_id: 1e4ff7412aea453db2f2a729b8fb960a
+status: 2
+status_message: null
