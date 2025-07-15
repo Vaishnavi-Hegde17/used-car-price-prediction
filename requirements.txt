@@ -8,3 +8,4 @@ mlflow
 dvc
 numpy
 python_multipart
+prometheus-fastapi-instrumentator

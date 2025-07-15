@@ -4,17 +4,26 @@ from fastapi.responses import HTMLResponse
 import joblib
 import numpy as np
 import os
+from prometheus_fastapi_instrumentator import Instrumentator
 
+# ✅ Create FastAPI app first
 app = FastAPI()
+
+# ✅ Set up Prometheus instrumentation after app is created
+Instrumentator().instrument(app).expose(app)
+
+# ✅ Jinja2 Templates
 templates = Jinja2Templates(directory="api/templates")
 
-# Load model
-model = joblib.load("models/random_forest.pkl")  # or your best model path
+# ✅ Load ML model
+model = joblib.load("models/random_forest.pkl")  # or your best_model.pkl
 
+# ✅ Home route (index form)
 @app.get("/", response_class=HTMLResponse)
 def form_page(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
+# ✅ Predict route
 @app.post("/predict", response_class=HTMLResponse)
 def predict(request: Request,
             Year: int = Form(...),
@@ -27,7 +36,7 @@ def predict(request: Request,
 
     input_data = np.array([[Year, Present_Price, Kms_Driven, Fuel_Type, Seller_Type, Transmission, Owner]])
     prediction = model.predict(input_data)[0]
-    prediction = round(prediction, 2)  # e.g., 3.45 Lakhs
+    prediction = round(prediction, 2)
 
     return templates.TemplateResponse("result.html", {
         "request": request,
